@@ -1,6 +1,6 @@
-# Introduction to Flask
+# ISS Tracker
 
-In this homework we explored the use of web applications in conjunction with databases to make more interactive and more robust applications. To do this we converted the python script from [homework05](https://github.com/NatBea03/COE-332-HW/tree/main/homework05) and uploaded the data to a redis database, running in a separate container. Similar to before, It will access the data from [this NASA website](https://spotthestation.nasa.gov/trajectory_data.cfm) which gets updated several times a week to ensure that the space station always has accurate trajectory data, but this time it will upload the data into a redis database, which will then back itself up onto the local computer's filesystem. This ensures that the data will stay up to date, but it wont need to request the data from NASA every time it is launched:
+This repo explores the use of web applications in conjunction with databases to make more interactive and more robust applications. To do this I converted a python script from [here](https://github.com/NatBea03/COE-332-HW/tree/main/homework05) and uploaded the data to a redis database, running in a separate container. It will access the data from [this NASA website](https://spotthestation.nasa.gov/trajectory_data.cfm) which gets updated several times a week to ensure that the space station always has accurate trajectory data, but this time it will upload the data into a redis database, which will then back itself up onto the local computer's filesystem. This ensures that the data will stay up to date, but it wont need to request the data from NASA every time it is launched:
 
 ![Diagram](ContainerDiagram.png)
 
