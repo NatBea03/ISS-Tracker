@@ -43,8 +43,9 @@ def get_data():
         data = xmltodict.parse(response.content)
         state_vectors = data['ndm']['oem']['body']['segment']['data']['stateVector']
         logging.info('Data successfully retrieved')
-        for vector in state_vectors:
-            rd.set(vector['EPOCH'], json.dumps(vector))
+        if not rd.keys()
+            for vector in state_vectors:
+                rd.set(vector['EPOCH'], json.dumps(vector))
     except requests.exceptions.RequestException as e:
         logging.error(f'Failed to retrieve data: {e}')
     except (xmltodict.expat.ExpatError, KeyError) as e:
