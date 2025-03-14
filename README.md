@@ -92,11 +92,11 @@ Here is a list of some other commands and their outputs include
 |`/epochs/<epoch>/speed`|Returns the speed of the ISS at the timestamp provided|
 |`/epochs/<epoch>/location`|Returns the location of the ISS at the timestamp provided|
 
-Finally, when done with the dontainer you can type:
+Finally, when done with the app you can type:
 
 `docker compose down`
 
-to stop and remove all container that were started.
+to stop and remove all containers that were started.
 
 ### Pytest
 
